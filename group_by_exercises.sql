@@ -23,7 +23,7 @@ GROUP BY last_name;
 SELECT CONCAT(count(last_name), ' ', last_name) FROM employees
 WHERE last_name LIKE '%q%'
   AND last_name NOT LIKE '%qu%'
-GROUP BY last_name;;
+GROUP BY last_name;
 # Update your query for 'Irena', 'Vidya', or 'Maya'. Use count(*) and GROUP BY to find the number of
 # employees for each gender with those names
 SELECT CONCAT(count(*), ' ', gender) as DATA FROM employees
