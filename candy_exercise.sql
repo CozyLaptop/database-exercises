@@ -37,3 +37,15 @@ INSERT INTO candies (name, price_in_cents, description, type_id) VALUES
 # -------------
 SELECT * FROM candies;
 SELECT * FROM types;
+SELECT candies.name AS 'Candy_Name',
+       type_id as 'Candy_Type'
+FROM candies
+JOIN types t on candies.type_id = t.id
+WHERE price_in_cents > 200;
+
+# SELECT t.name from types t, c.name FROM candies c,
+# JOIN types t
+# left join on c.type id = t.id
+# WHERE price_in_cents < 200;
+# SHOW TABLES;
+# SELECT * FROM types;
